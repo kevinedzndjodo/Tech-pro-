@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <div id="container" class="relative">
+
+    <nav class="relative flex items-center justify-between bg-white p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <img src="images/logo.svg" class="mr-10">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 ml-3 mr-6 hover:border-b-2 border-blue-800">
+              <p onclick="displayElement()">
+                Categories
+              </p>
+              <div id="popUp-Menu" class="hidden absolute">
+            
+                  <di class="grid grid-cols-4 bg-white p-4">
+                    <div class="flex items-center justify-center px-8">
+              
+                      <a href="#">
+                        <img src="images/product-category-home-entertainment-intro-0d616855.webp" alt="Image 1" class="flex w-15 h-15 p-2 m-4">
+                      </a> 
+                      <div>
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Home Entertainment</a></p>
+                        <p class="text-xs">
+                          TV, Projectors, Home Cinema
+                        </p>
+                      </div>
+              
+                    </div>
+                    
+                    <div class="flex items-center justify-center p-4">
+              
+                      <img src="images/product-category-computers-intro-c71ae5f2.webp" alt="Image 2" class="flex w-15 h-15 p-2 m-4">
+                      <div>
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Computer</a></p>
+                        <p class="text-xs">
+                          Laptops, Monitors, All-In-One Computers
+                        </p>
+                      </div>
+                      
+                    </div>
+              
+                    <div class="flex items-center justify-center p-4">
+              
+                      <img src="images/product-category-phones-and-tablets-intro-d6e190aa.webp" alt="Image 3" class="flex w-15 h-15 p-2 m-4">
+              
+                      <div>
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Phones & Tablets</a></p>
+                        <p class="text-xs">
+                        Smartphones, Tablets,
+                        </p>
+                      </div>
+              
+                      
+                    </div>
+                    <div class="flex items-center justify-center p-4">
+                      <img src="images/product-category-camera-intro-94a4330d.webp" alt="Image 4" class="flex w-15 h-15 p-2 m-4">
+              
+                      <div>
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Camera</a></p>
+                        <p class="text-xs">
+                          Compact Cameras, DSLR Cameras, Action Cameras, Lenses
+                        </p>
+                      </div>
+                      
+                    </div>
+                    <div class="flex items-center justify-center p-4">
+                      <img src="images/product-category-audio-and-music-intro-8b87993c.webp" alt="Image 5" class="flex w-15 h-15 p-2 m-4">
+              
+                      <div>
+                        
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Audio & Music</a></p>         
+                        <p class="text-xs">
+                          Headphones, Portables Speakers, Hi-Fi Systems
+                        </p>
+                      </div>
+                      
+                    </div>
+                    <div class="flex items-center justify-center p-4">
+                      
+                      <img src="images/product-category-gaming-and-vr-intro-d9d880bb.webp" alt="Image 6" class="flex w-15 h-15 p-2 m-4">
+              
+                      <div>
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Gaming & VR</a></p>
+                        <p class="text-xs">
+                          Consoles, Virtual REality, Retro Consoles
+                        </p>
+                      </div>
+                      
+                      
+              
+                    </div>
+                    <div class="flex items-center justify-center p-4">
+                      <img src="images/product-category-wearables-intro-f885c559.webp" alt="Image 7" class="flex w-15 h-15 p-2 m-4">
+              
+                      <div>
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Wearables</a></p>
+                        <p class="text-xs">
+                          Smartwatches, Fitness Trackers
+                        </p>
+                      </div>
+                      
+                    </div>
+                    <div class="flex items-center justify-center p-4">
+                      <img src="images/product-category-drones-intro-2ad5009c.webp" alt="Image 8" class="flex w-15 h-15 p-2 m-4">
+              
+                      <div>
+                        
+                        <p><a href="#" class="font-bold text-l hover:text-blue-700">Drones</a></p>          
+                        <p class="text-xs">
+                          Standard Drones, Pro Drones
+                        </p>
+                      </div>
+                      
+                    </div>
+                
+
+              </div>
+              
+              <!--Here is the list inside the categories-->
+              <!--<ul id="categories" class="hidden">
+                  <li class="flex">
+                    <a href="#" class="mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+                      <img src="images/product-category-home-entertainment-intro-0d616855.webp">
+                      <h2>Home Entertainment</h2>
+                      <p>Tv, Projectors, Home Cinema</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+                      Best Deals
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+                      Best Deals
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+                      Best Deals
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+                      Best Deals
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+                      Best Deals
+                    </a>
+                  </li>
+
+              </ul>
+          </a>-->
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6 hover:border-b-2 border-blue-800">
+              Best Deals
+          </a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-900 hover:border-b-2 border-blue-800">
+              How It Works
+          </a>
+      </div>
+      <div class="flex">
+        <div class="mr-4 relative">
+          <input type="text" placeholder="Search..." class="bg-slate-200 text-white pl-9 pr-4 py-2 focus:outline-none focus:bg-white focus:text-gray-900 focus:placeholder-gray-600 transition-colors duration-200 ease-in-out left-2">
+          <img src="images/search-interface-symbol.png" class="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4">
+        </div>
+        <div>
+          <a href="#"><img src="images/user.png" class=" h-8 w-8 ml-4 mr-6 p-1 hover:border-b-2 border-blue-800"></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/shopping-bag.png" class=" h-8 w-8 mr-4 p-1 hover:border-b-2 border-blue-800"></a>
+        </div>
+
+      </div>
+    </nav>
+    
+    <div class="relative" id="lap-teaser">
+      <img src="images/product-category-laptops-teaser-left-640bf1eb.webp" class="h-auto w-full">
+      
+      <div class="absolute top-24 right-0 text-white p-2">
+        <p class="p-4 m-4">New Arrivals</p>
+        <h1 class="text-3xl font-bold p-3 m-2">Rent the New Apple <br />MacBook Pro</h1>
+        <p class="p-4 m-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
+        </p>
+        <button class="bg-blue-700 p-4 m-4">
+          Discover More
+        </button>
+      </div>
+
+    </div>
+
+    <div class="flex flex-wrap justify-center">
+      <div class="relative w-1/3 p-2">
+          <img src="images/product-category-headphones-teaser-right-b0c11d3e.webp" alt="Image 1" class="w-full h-auto rounded-lg">
+          <div class="absolute top-0 left-0 text-black p-2 m-2">
+            <h1 class="text-3xl font-bold p-6 m-2">Headphones</h1>
+            <p class="p-6 m-2">
+              Best Headphones for Every Day
+            </p>
+
+            <p class="font-bold p-6 m-2">
+              <a href="#" class="hover:border-b-4 border-blue-800 pb-2">View Collection</a>
+            </p>
+          </div>
+      </div>
+      <div class="relative w-1/3 p-2">
+          <img src="images/product-category-smartphones-teaser-right-56cdff9b (1).webp" alt="Image 2" class="w-full h-auto rounded-lg">
+          <div class="absolute top-0 left-0 text-white p-2 m-2">
+            <h1 class="text-3xl font-bold p-6 m-2">Smartphones</h1>
+            <p class="p-6 m-2">
+              Newest Smartphones
+            </p>
+
+            <p class="font-bold p-6 m-2">
+              <a href="#" class="hover:border-b-4 border-blue-800 pb-2">View Collection</a>
+            </p>
+          </div>
+      </div>
+
+      <div class="relative w-1/3 p-2">
+        <img src="images/product-category-smartwatches-teaser-right-1dcb7ce2 (1).webp" alt="Image 3" class="w-full h-auto rounded-lg">
+        <div class="absolute top-0 left-0 text-white p-2 m-2">
+          <h1 class="text-3xl font-bold p-6 m-2">Smartwatches</h1>
+          <p class="p-6 m-2 text-gray-500">
+              The ultimate accessory
+          </p>
+
+          <p class="font-bold p-6 m-2">
+            <a href="#" class="hover:border-b-4 border-blue-800 pb-2">View Collection</a> 
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="text-center">
+      <p class="p-8 m-8">Categories</p>
+      <h1 class=" text-5xl font-bold p-2 m-2">Explore Our Product Range</h1>
+    </div>
+
+  <!-- <div class="flex flex-wrap justify-center">
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+          <img src="images/product-category-home-entertainment-intro-0d616855.webp" alt="Image 1" class="w-20 h-15 rounded-lg">
+      </div>
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+          <img src="images/product-category-computers-intro-c71ae5f2.webp" alt="Image 2" class="w-20 h-15 rounded-lg">
+      </div>
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+          <img src="images/product-category-phones-and-tablets-intro-d6e190aa.webp" alt="Image 3" class="w-20 h-15 rounded-lg">
+      </div>
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+          <img src="images/product-category-camera-intro-94a4330d.webp" alt="Image 4" class="w-20 h-15 rounded-lg">
+      </div>
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2"> 
+          <img src="images/product-category-audio-and-music-intro-8b87993c.webp" alt="Image 5" class="w-20 h-15 rounded-lg">
+      </div>
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+          <img src="images/product-category-gaming-and-vr-intro-d9d880bb.webp" alt="Image 6" class="w-20 h-15 rounded-lg">
+      </div>
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+          <img src="images/product-category-wearables-intro-f885c559.webp" alt="Image 7" class="w-20 h-15 rounded-lg">
+      </div>
+      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+          <img src="images/product-category-drones-intro-2ad5009c.webp" alt="Image 8" class="w-20 h-15 rounded-lg">
+      </div>
+    </div>-->
+
+    <div class="flex overflow-x-auto justify-between p-4 m-4 font-bold">
+
+      <div class="flex-none text-center">
+        <img src="images/product-category-home-entertainment-intro-0d616855.webp" alt="Image 1" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Home Entertainment</p>
+      </div>
+      
+      <div class="flex-none text-center">
+        <img src="images/product-category-computers-intro-c71ae5f2.webp" alt="Image 2" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Computer</p>
+      </div>
+      <div class="flex-none text-center">
+        <img src="images/product-category-phones-and-tablets-intro-d6e190aa.webp" alt="Image 3" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Phones & Tablets</p>
+      </div>
+      <div class="flex-none text-center">
+        <img src="images/product-category-camera-intro-94a4330d.webp" alt="Image 4" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Camera</p>
+      </div>
+      <div class="flex-none text-center">
+        <img src="images/product-category-audio-and-music-intro-8b87993c.webp" alt="Image 5" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Audio & Music</p>
+      </div>
+      <div class="flex-none text-center">
+        <a href="#" class="hover:text-blue-700">
+        <img src="images/product-category-gaming-and-vr-intro-d9d880bb.webp" alt="Image 6" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Gaming & VR</p>
+        </a>
+
+      </div>
+      <div class="flex-none text-center">
+        <img src="images/product-category-wearables-intro-f885c559.webp" alt="Image 7" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Wearables</p>
+      </div>
+      <div class="flex-none text-center">
+        <img src="images/product-category-drones-intro-2ad5009c.webp" alt="Image 8" class="flex-none w-20 h-15 p-2 m-4">
+        <p class="pr-2 mr-2">Drones</p>
+      </div>
+
+
+
+      
+      
+    </div>
+  
+    <div class="text-center pt-10 mt-5">
+      <h1 class="text-5xl font-bold px-4 m-8">Save More With Our Best Deals
+      </h1>
+      <p class="px-4 font-light m-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="font-extrabold m-8"><a href="#" class="hover:border-b-2 border-blue-800 pb-2">See All Details</a></p>
+    </div>
+
+    <div class="grid grid-cols-4 gap-2 p-4 m-4">
+      <div class="bg-slate-300">
+        <img src="images/product-post-apple-iphone-11-pro-256gb-space-gray-8d18266a.webp" class="w-full h-auto">
+      </div>
+      <div class="bg-slate-300">
+        <img src="images/product-post-apple-airpods-gen2-with-charging-case-088f446d.webp" class="w-full h-auto">
+      </div>
+      <div class="col-span-2 row-span-2 bg-slate-300">
+        <img src="images/product-post-apple-imac-27-retina-5k-3-6ghz-quad-core-processor-50a44f02.webp" class="w-full h-auto">
+      </div>
+      <div class="col-span-2 row-span-2 bg-slate-300">
+        <img src="images/product-post-loewe-display-5-65-bm25052501-767a4897.webp" class="w-full h-auto">
+      </div>
+      <div class="bg-slate-300">
+        <img src="images/product-post-sony-playstation-4-500gb-white-80252839.webp" class="w-full h-auto">
+      </div>
+      <div class="bg-slate-300">
+        <img src="images/product-post-sony-dualshock-4-wireless-controller-green-camouflage-d10b56af.webp" class="w-full h-auto">
+      </div>
+
+    </div>
+    
+
+    <div class="text-center m-8">
+      <h2 class="text-2xl font-bold m-4 p-2">Trending Products and
+        Bestsellers
+      </h2>
+      <p class="m-6 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 m-8">
+
+      <div class="col-span-2 row-span-4">
+        <img src="images/product-category-compact-camera-teaser-bottom-441be2ec.webp" class="w-full h-auto">
+      </div>
+
+      <div class="col-span-2 row-span-2">
+        <img src="images/product-category-consoles-teaser-right-119ae04a.webp" class="w-full h-auto">
+      </div>
+
+      <div class="col-span-2 row-span-2">
+        <img src="images/product-category-tablets-teaser-left-f4cbfc33.webp" class="w-full h-auto">
+      </div>
+    </div>
+
+    <div class="text-center m-8">
+      <h2 class="text-4xl font-bold m-4">
+        When it's cold outside, go play inside. Rent our game consoles and VR.
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <p class="m-4"><a href="#" class="font-bold hover:border-b-2 border-blue-700 pb-2">View Gaming Collection</a></p>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4">
+      <div class="flex items-center justify-center relative col-span-2 row-span-2">
+        <img src="images/product-category-gaming-vr-teaser-bottom-5c55e80f.webp" class="w-full h-auto">
+        <div class="absolute top-10 text-center p-4 m-4">
+          <p class="text-slate-400 font-normal m-2">Gaming & VR</p>
+          <h2 class="text-3xl text-black font-bold p-4 m-2">
+            The Most Powerful Consoles, The Best Games
+          </h2>
+          <p><a href="#" class="border-b-2 border-blue-600 pb-2 hover:text-blue-600 font-bold">View Collection</a></p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center relative col-span-2 row-span-2">
+        <img src="images/product-category-virtual-reality-teaser-bottom-8b975f76.webp" class="w-full h-auto">
+        <div class="absolute top-10 text-center p-4 m-4">
+          <p class="text-slate-400 font-normal m-2">Virtual reality</p>
+          <h2 class="text-3xl text-black font-bold p-4 m-2">
+            New Adventures Await You In the Virtual World
+          </h2>
+          <p><a href="#" class="border-b-2 border-blue-600 pb-2 hover:text-blue-600 font-bold">View Collection</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="p-4 mt-20 w-full h-fit bg-violet-600 text-white">
+
+      <div class="text-center m-4 p-4">
+        <h2 class="font-bold text-3xl text-white mt-2">
+          Just 3 Simple Steps
+        </h2>
+        <p class="text-slate-200 mt-2 px-8 m-8">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolore magna aliquyam sed diam voluptua
+        </p>
+      </div>
+      <div class="grid grid-cols-3 m-6">
+
+        <div class="p-4 border-r-2 border-white text-center">
+          <div class="flex items-center justify-center">
+            <img src="images/delivery-man.png" class="w-24 h-24">
+          </div>
+          
+          <h2 class="text-2xl font-bold p-2 m-2">
+            Select Your Product
+          </h2>
+          <p class="px-10">
+            Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy
+          </p>
+        </div>
+        <div class="p-4 border-r-2 border-white text-center">
+          <div class="flex items-center justify-center">
+            <img src="images/boxes.png" class="w-24 h-24">
+          </div>
+          
+          <img>
+          <h2 class="text-2xl font-bold p-2 m-2">
+            Receive Your Device
+          </h2>
+          <p class="px-10">
+            Ipsum dolor sit amet conset etur sadipscing elitr sed nonumy
+
+          </p>
+        </div>
+        <div class="p-4 text-center">
+          <div class="flex items-center justify-center">
+            <img src="images/delivery.png" class="w-24 h-24">
+          </div>
+          
+          <h2 class="text-2xl font-bold p-2 m-2">
+            Send It Back
+          </h2>
+          <p class="px-10">
+            Ipsum dolor sit amet conset etur sadipscing elitr sed nonumy
+          </p>
+        </div>
+
+      </div>
+      <div class="flex items-center justify-center m-6">
+        <button class="font-bold border-2 border-white p-2 m-2 hover:bg-white text-black">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 m-20 p-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold">
+            Tech Space
+        </h2>
+        <ul class="m-10">
+
+          <li>Mainstreet 123</li>
+          <li>12345 Amsterdam</li>
+          <li>Netherlands</li>
+        </ul>
+
+        <p><a href="#" class="border-b-2 border-blue-700 pb-2 hover:text-blue-600">Google Maps</a>
+        </p>
+      </div>
+
+      <div class="text-center">
+        <h2 class="text-3xl font-bold">
+          Categories
+        </h2>
+        <ul>
+          <li class="m-5 p-2">
+            <a href="#" class="mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              Tv, Projectors, Home Cinema
+            </a>
+          </li>
+
+          <li class="m-2 p-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              Computer
+            </a>
+          </li>
+          <li class="m-2 p-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              Phones & Tablets
+            </a>
+          </li>
+          <li class="m-2 p-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              Cameras
+            </a>
+          </li>
+          <li class="m-2 p-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+            Audio & Music
+            </a>
+          </li>
+          <li class="m-2 p-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              Gaming & VR
+            </a>
+          </li>
+          <li class="m-2 p-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              Wearables
+            </a>
+          </li>
+          <li class="m-2 p-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+            Drones
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="text-center">
+        <h2 class="text-3xl font-bold">
+          Services
+        </h2>
+        <ul>
+          <li class="mt-10">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              Best Deals
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              How It Works
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              FAQ
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 mr-6">
+              About US
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="mx-0">
+        <h2 class="text-3xl font-bold m-0">
+          Sign up to Our Newsletter
+          and Never Miss a Deal
+        </h2>
+
+        <input type="text" placeholder="Email address..." class="w-fit bg-slate-200 m-0 p-2 mt-10">
+        <p class="mt-5"><a href="#" class="border-b-2 border-blue-700 pb-2 hover:text-blue-700 font-bold">Sign UP</a></p>
+      </div>
+
+    </div>
+
+    <div class="border-t-2 border-slate-300 m-10 p-4">
+      <div class="flex items-center justify-between p-4">
+        <p class="text-slate-400">
+          © 2024 Tech Space. All rights reserved. Powered by YOOtheme.
+        </p>
+        <nav class="flex items-center justify-center space-x-6">
+          <a href="#"><img src="images/facebook-app-symbol.png" alt="facebook" class="w-4 h-4"></a>
+          <a href="#"><img src="images/twitter.png" alt="twitter" class="w-4 h-4"></a>
+          <a href="#"><img src="images/instagram.png" alt="instagram" class="w-4 h-4"></a>
+          <a href="#"><img src="images/youtube.png" alt="youtube" class="w-4 h-4"></a>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
